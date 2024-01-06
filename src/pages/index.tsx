@@ -3,8 +3,7 @@ import HomePageBanner from '@/components/ui/HomePage/HomePageBanner';
 import { ReactNode } from 'react';
 
 
-export default function Home(
-) {
+export default function Home() {
   
 
   return (
@@ -20,14 +19,14 @@ Home.getLayout = function getLayout(page:ReactNode) {
 };
 
 
-/* export const getStaticProps = async () => {
-  const res = await fetch("https://quiz-website-backend-delta.vercel.app/api/v1/categories");
+export const getStaticProps = async () => {
+  const res = await fetch("http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10");
   const data = await res.json();
 
   return {
     props: {
-      categorieData: data,
+      products: data,
     },
     revalidate: 300,
   };
-};  */
+};  

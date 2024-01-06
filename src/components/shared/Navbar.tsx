@@ -32,7 +32,7 @@ const Navbar = ({}) => {
                   </span>
                 </div>
                  {
-                  isMenuOpen && <div className="absolute w-36 bg-white my-2 rounded-lg">
+                  isMenuOpen && <div className="absolute w-36 bg-white my-2 rounded-lg z-10">
                   <ul className="my-3">
                     <li className="cursor-pointer px-3 py-1 text-slate-500 hover:text-orange-500 hover:bg-[#ececec]">Home</li>
                     <li className="cursor-pointer px-3 py-1 text-slate-500 hover:text-orange-500 hover:bg-[#ececec]">Details</li>
