@@ -1,4 +1,5 @@
 import RootLayout from '@/components/Layouts/RootLayout';
+import HomePageBanner from '@/components/ui/HomePage/HomePageBanner';
 import { ReactNode } from 'react';
 
 
@@ -8,6 +9,7 @@ export default function Home(
 
   return (
     <div className=''>
+      <HomePageBanner/>
       <h1>This is Home</h1>
     </div>
   )
