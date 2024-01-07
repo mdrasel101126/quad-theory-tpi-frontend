@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { GoPerson } from "react-icons/go";
 import { IoIosArrowDown } from "react-icons/io";
@@ -9,13 +10,15 @@ const Navbar = ({}) => {
      <div className='max-w-[1200px] mx-auto my-4'>
         <nav className="flex flex-row md:justify-between mx-3">
             <div className="">
-              <h1 className='text-2xl font-bold'>pti.</h1>
+             <Link href="/">
+             <h1 className='text-2xl font-bold'>pti.</h1>
+             </Link>
             </div>
             <div className="flex flex-row w-full md:w-3/5 ml-5 md:ml-0 ">
                <div className="relative flex items-center w-full h-12 rounded-lg bg-white overflow-hidden">
                   <div className="grid place-items-center h-full w-12 text-gray-300">
                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                      </svg>
                   </div>
                 <input
@@ -34,7 +37,9 @@ const Navbar = ({}) => {
                  {
                   isMenuOpen && <div className="absolute w-36 bg-white my-2 rounded-lg z-10">
                   <ul className="my-3">
+                    <Link href="/">
                     <li className="cursor-pointer px-3 py-1 text-slate-500 hover:text-orange-500 hover:bg-[#ececec]">Home</li>
+                    </Link>
                     <li className="cursor-pointer px-3 py-1 text-slate-500 hover:text-orange-500 hover:bg-[#ececec]">Details</li>
                     <li className="cursor-pointer px-3 py-1 text-slate-500 hover:text-orange-500 hover:bg-[#ececec]">Category</li>
                     <li className="cursor-pointer px-3 py-1 text-slate-500 hover:text-orange-500 hover:bg-[#ececec]">My Favorites</li>

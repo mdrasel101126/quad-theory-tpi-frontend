@@ -1,15 +1,23 @@
 import RootLayout from '@/components/Layouts/RootLayout';
 import HomePageBanner from '@/components/ui/HomePage/HomePageBanner';
+import PopularProductSlider from '@/components/ui/HomePage/PopularProductSlider';
+import RecomendedProductSlider from '@/components/ui/HomePage/RecomendedProductSlider';
+
+
 import { ReactNode } from 'react';
 
 
-export default function Home() {
-  
 
+export default function Home({products}:any) {
+  
+//console.log(products);
+const slides=products?.Items;
+//console.log(slides);
   return (
     <div className=''>
       <HomePageBanner/>
-      <h1>This is Home</h1>
+      <PopularProductSlider slides={slides}/>
+      <RecomendedProductSlider slides={slides}/>
     </div>
   )
 }
