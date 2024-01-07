@@ -27,7 +27,7 @@ const Footer = () => {
                                     <FaInstagram/>
                                     </div>
                                 </div>
-                                <h2 className="text-2xl font-bold  md:hidden text-center mt-10">pti<span className="text-orange-500">.</span></h2>
+                                <h2 className="text-3xl font-bold  md:hidden text-center mt-10">pti<span className="text-orange-500">.</span></h2>
                                 <h3 className="font-bold md:hidden text-center mt-6">Copyright&copy;Tripp.All right reserved.</h3>
                             </div>
                         </div>

@@ -11,7 +11,7 @@ const Navbar = ({}) => {
         <nav className="flex flex-row md:justify-between mx-3">
             <div className="">
              <Link href="/">
-             <h1 className='text-2xl font-bold'>pti.</h1>
+             <h1 className='text-3xl font-bold'>pti.</h1>
              </Link>
             </div>
             <div className="flex flex-row w-full md:w-3/5 ml-5 md:ml-0 ">

@@ -3,7 +3,7 @@
 
 
 const PopularProductCard = ({product}:any) => {
-    console.log(product);
+    //console.log(product);
     return (
         <div className="w-1/3 md:w-1/5">
             {

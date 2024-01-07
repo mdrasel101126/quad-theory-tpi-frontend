@@ -7,7 +7,6 @@ import Link from "next/link";
 
 
 const RecomendedProductSlider = ({slides}:any) => {
-    const [productNumber,setProductNumber]=useState<number>(0);
     const [currentProduct,setCurrentProduct]=useState<number>(0);
     const recomendedProducts=slides?.filter((slide:any)=>slide.IsRecommended==true);
     //console.log(slides);
