@@ -1,6 +1,6 @@
 # tpi-frontend
 
-# Live Link: [BookCatalog](https://loquacious-capybara-9cc89a.netlify.app/)
+# Live Link: [tpi-frontend](https://loquacious-capybara-9cc89a.netlify.app/)
 
 ## Frontend Technologies
 
